@@ -40,7 +40,7 @@ async function searchSong() {
     try {
 
         const response = await fetch(
-            `http://localhost:3000/search-song?q=${encodeURIComponent(song)}`
+    `http://localhost:3000/search-song?q=${encodeURIComponent(song)}`
         );
 
         if (!response.ok) {
