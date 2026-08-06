@@ -1,62 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="card">
-        <header>
-            <img src="CICS logo.png" alt="" srcset="" id="logo">
-            <div id="scc">
-                
-                <p class="f">
-                    
-                    College of Information and <br> Communication Studies
-                </p>
 
-            </div>
-        </header>
-        <main>
-            <img src="ff.jpg" alt="Profile Picture" id="profile">
-            <div id="info">
-                <p id="name">Levy S. Poyaoan</p>
-                <p id="program">BS Information Technology</p>
-            </div>
-        
-            
+    <div id="form">
 
-            <div id="context">
-                <div id="d">
-                    <p id="m">Most Said Line</p>
-                    <p id="most">
-                      
-                    </p>
-                </div>
-                
-            
-                    <div class="music-card">
-                    
-                        <img id="songImage">
-                    
-                        <div class="song-info">
-                            <h3 id="songTitle">Song Name</h3>
-                            <p id="artistName">Artist</p>
-                        </div>
-                    
-                        <div class="progress">
-                            <div></div>
-                        </div>              </div>
-    
+        <input type="file" id="imageInput" accept="image/*">
+        <img id="preview" width="150">
+
+        <label>Name</label>
+        <input type="text" id="studentName" placeholder="Enter your name">
+
+        <label>Program</label>
+        <select id="program">
+            <option value="BS Information Technology">
+                BS Information Technology
+            </option>
+        </select>
+
+        <label>Most Said Line</label>
+        <input type="text" id="mostSaidLine" placeholder="Enter your most said line">
+
+        <label>Favorite Song</label>
+        <input type="text" id="favoriteSong" placeholder="Enter favorite song">
+
+        <button type="button" onclick="searchSong()">
+            Search Song
+        </button>
+
+        <div class="spotify-card">
+
+            <img id="albumCover" src="" width="60">
+
+            <div>
+                <h3 id="songName"></h3>
+                <p id="artist"></p>
             </div>
-        </main>
-        <footer>
-            <p>Basta IT SCC</p>
-        </footer>
+
+        </div>
+
+        <input type="button" value="Submit" onclick="onSubmit()">
+
     </div>
 
-    <script src="index.js"></script>
+    <script src="form.js"></script>
+
 </body>
+
 </html>

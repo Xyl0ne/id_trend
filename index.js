@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("public")); // Serve HTML, CSS, JS from /public
 app.get("/", (req, res) => {
-    res.redirect("/form.html");
+    res.redirect("/index.html");
 });
 // =======================
 // HOME

@@ -91,7 +91,7 @@ function onSubmit() {
 
             localStorage.setItem("userImage", e.target.result);
 
-            window.location.href = "index.html";
+            window.location.href = "card.html";
 
         };
 
@@ -99,7 +99,7 @@ function onSubmit() {
 
     } else {
 
-        window.location.href = "index.html";
+        window.location.href = "card.html";
 
     }
 
